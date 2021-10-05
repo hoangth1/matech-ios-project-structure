@@ -13,6 +13,12 @@
 		6F5842D5270C3E2100C4D632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5842D3270C3E2100C4D632 /* Main.storyboard */; };
 		6F5842D7270C3E2200C4D632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F5842D6270C3E2200C4D632 /* Assets.xcassets */; };
 		6F5842DA270C3E2200C4D632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5842D8270C3E2200C4D632 /* LaunchScreen.storyboard */; };
+		6F5842EA270C475C00C4D632 /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5842E9270C475C00C4D632 /* APIUrls.swift */; };
+		6F5842ED270C49B800C4D632 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5842EC270C49B800C4D632 /* Utils.swift */; };
+		6F5842F1270C49E500C4D632 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5842F0270C49E500C4D632 /* ViewControllerExtension.swift */; };
+		6F5842F3270C49E900C4D632 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5842F2270C49E900C4D632 /* ImageExtension.swift */; };
+		6F5842F5270C4A1000C4D632 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5842F4270C4A1000C4D632 /* UIImageViewExtension.swift */; };
+		6F5842F7270C4A1D00C4D632 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5842F6270C4A1D00C4D632 /* UITextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		6F5842D6270C3E2200C4D632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F5842D9270C3E2200C4D632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F5842DB270C3E2200C4D632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F5842E9270C475C00C4D632 /* APIUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = SOURCE_ROOT; };
+		6F5842EC270C49B800C4D632 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		6F5842F0270C49E500C4D632 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		6F5842F2270C49E900C4D632 /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		6F5842F4270C4A1000C4D632 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		6F5842F6270C4A1D00C4D632 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,77 @@
 		6F5842CC270C3E2100C4D632 /* ProjectStructure */ = {
 			isa = PBXGroup;
 			children = (
+				6F5842E2270C44E500C4D632 /* Config */,
+				6F5842E3270C44EE00C4D632 /* Data */,
+				6F5842E5270C450A00C4D632 /* Resources */,
+				6F5842E6270C451200C4D632 /* Scenes */,
+				6F5842E7270C451B00C4D632 /* Support */,
 				6F5842CD270C3E2100C4D632 /* AppDelegate.swift */,
 				6F5842CF270C3E2100C4D632 /* SceneDelegate.swift */,
-				6F5842D1270C3E2100C4D632 /* ViewController.swift */,
-				6F5842D3270C3E2100C4D632 /* Main.storyboard */,
-				6F5842D6270C3E2200C4D632 /* Assets.xcassets */,
-				6F5842D8270C3E2200C4D632 /* LaunchScreen.storyboard */,
 				6F5842DB270C3E2200C4D632 /* Info.plist */,
 			);
 			path = ProjectStructure;
+			sourceTree = "<group>";
+		};
+		6F5842E2270C44E500C4D632 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6F5842E9270C475C00C4D632 /* APIUrls.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6F5842E3270C44EE00C4D632 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6F5842E5270C450A00C4D632 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F5842D6270C3E2200C4D632 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6F5842E6270C451200C4D632 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6F5842E8270C46DD00C4D632 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6F5842E7270C451B00C4D632 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6F5842EB270C49A300C4D632 /* Extension */,
+				6F5842EC270C49B800C4D632 /* Utils.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		6F5842E8270C46DD00C4D632 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6F5842D3270C3E2100C4D632 /* Main.storyboard */,
+				6F5842D1270C3E2100C4D632 /* ViewController.swift */,
+				6F5842D8270C3E2200C4D632 /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6F5842EB270C49A300C4D632 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6F5842F2270C49E900C4D632 /* ImageExtension.swift */,
+				6F5842F0270C49E500C4D632 /* ViewControllerExtension.swift */,
+				6F5842F4270C4A1000C4D632 /* UIImageViewExtension.swift */,
+				6F5842F6270C4A1D00C4D632 /* UITextFieldExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +211,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F5842ED270C49B800C4D632 /* Utils.swift in Sources */,
+				6F5842F7270C4A1D00C4D632 /* UITextFieldExtension.swift in Sources */,
+				6F5842EA270C475C00C4D632 /* APIUrls.swift in Sources */,
+				6F5842F1270C49E500C4D632 /* ViewControllerExtension.swift in Sources */,
 				6F5842D2270C3E2100C4D632 /* ViewController.swift in Sources */,
 				6F5842CE270C3E2100C4D632 /* AppDelegate.swift in Sources */,
 				6F5842D0270C3E2100C4D632 /* SceneDelegate.swift in Sources */,
+				6F5842F5270C4A1000C4D632 /* UIImageViewExtension.swift in Sources */,
+				6F5842F3270C49E900C4D632 /* ImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
