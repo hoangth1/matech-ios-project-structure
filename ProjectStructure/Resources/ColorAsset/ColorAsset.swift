@@ -9,4 +9,5 @@ import Foundation
 
 class ColorAsset  {
     // Khai báo tất cả màu được define trên figma theo tên mà design đặt
+    static let colorBlack = "#000000"
 }

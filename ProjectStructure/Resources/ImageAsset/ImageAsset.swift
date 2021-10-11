@@ -8,5 +8,9 @@
 import Foundation
 
 class ImageAsset {
-    static let icTabhome = "ic_tab_home"
+    static let icTap = "ic_tap"
+    
+    enum Home {
+        static let iconFlash = "Home/ic_ pin_flash"
+    }
 }
